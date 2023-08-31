@@ -117,6 +117,8 @@ int main() {
 
     int arr[6] = {-1, 54, 53, 55, 50, 52};
     int n = 5;
+
+    //heap creation
     for( int i = n/2 ; i > 0; i--) {
         heapify( arr, n, i);
     }
