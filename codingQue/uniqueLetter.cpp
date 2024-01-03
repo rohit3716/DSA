@@ -11,12 +11,11 @@ int main(){
     int j = 1;
     while (i < s.size())
     {
-
         unique += s[i];
         i = i+j;
         j++;
     }
     
-    
+    cout<< "Unique characters: " << unique<< endl;
     
 }
