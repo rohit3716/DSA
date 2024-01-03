@@ -10,8 +10,10 @@ class Hero {
     public:
     char *name;
     char level;
+    int x1 = 5;
     static int timeToComplete;
 
+    //default constructor
     Hero() {
         cout<< "Simple constructor called"<<endl;
         name = new char[100];
@@ -62,7 +64,9 @@ class Hero {
         strcpy(this->name, name);
     }
 
-    static int random() {
+    static int random(int timeToComplete) {
+        
+        timeToComplete += 1;
         return timeToComplete;
     }
 
@@ -79,7 +83,8 @@ int main() {
     
     //cout<< Hero::timeToComplete <<endl;
 
-    cout<<Hero::random()<<endl;
+    cout<<Hero::random(9)<<endl;
+    cout<<Hero::random(10)<<endl;
 
     //Hero a;
 

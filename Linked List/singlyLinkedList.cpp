@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 class Node {
@@ -216,7 +216,7 @@ int main() {
     cout<< "tail "<< tail->data << endl;
 
     deleteNode(4,head);
-    // print(head);
+    print(head);
 
     tail ->next = head ->next;
 
@@ -231,7 +231,7 @@ int main() {
     //     cout << "No cycle "<<endl;
     //     }
     
-    if (detectLoop(Node* head))
+    if (detectLoop( head))
     {
         cout<<"Cycle is present. "<<endl;
     }
